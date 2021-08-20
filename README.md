@@ -1,21 +1,19 @@
 # Secure Boot reference design for Zynq Ultrascale+ MPSoC
 
-[![logo](images/ines_logo.png)](https://www.zhaw.ch/en/engineering/institutes-centres/ines/ "Homepage")
+<img src="images/ines_logo.png" width="500">
+<img src="images/enclustra_logo_transparent.png" width="500">
 
-__The group High Performance Multimedia from the Institute of Embedded Systems
-associated with ZHAW School of Engineering proudly presents a secure boot
-implementation for the SoC module Mercury XU5 from Enclustra based on the Zynq
-Ultrascale+ MPSoC from Xilinx.__
+The group High Performance Multimedia from the Institute of Embedded Systems associated with ZHAW School of Engineering proudly presents a secure boot implementation for the SoC module Mercury XU5 from Enclustra based on the Zynq Ultrascale+ MPSoC from Xilinx. This reference design was created during a bachelor thesis and afterwards released on github. The repository was forked and further updated by Enclustra, to keep the reference design up to date.
 
-> For recent news check out our [Blog](https://blog.zhaw.ch/high-performance/).
+> For recent news about the High Performace group at ZHAW, check out our [Blog](https://blog.zhaw.ch/high-performance/).
 
 This reference design for the Mercury PE1 board with the SoC Module Mercury XU5
 was created during a bachelor thesis. It provides a reference implementation
 and instructions on how to create a secure and boot able image for your device,
 as well as other security features provided with the Xilinx Ultrascale+ MPSoC.
 
-Further informations and the complete documentation of the bachelor thesis can
-be found in the [Documentation](BA20_rosn_02_Secure_Boot_final.pdf).
+The complete documentation of the bachelor thesis can
+be found in the [here](BA20_rosn_02_Secure_Boot_final.pdf).
 
 ## Repository structure
 
@@ -74,11 +72,10 @@ OP-TEE a secure OS.
 
 This section describes the tools and the environment used for the
 implementation. All features were tested on a Mercury XU5 (ME-XU5-5EV-2I-D12E)
-module mounted on a Mercury PE1 board (ME-PE1-300-W). The bitstream was created
-using Vivado 2019.2. A Vivado template project can be downloaded from the
-Enclustra download website. Further, we used PetaLinux version 2019.2 to create
-images. Most applications were manually compiled, although they can be directly
-integrated into the PetaLinux process. Nevertheless, because it is often very
-time consuming, the gnu-aarch64-none-linux-gcc compiler (9.2-2019.12) was used
+module mounted on a Mercury PE1 board (ME-PE1-300-W). The  examples
+were tested with Enclustras Reference Design and Petalinux Images for Xilinx tool version
+2020.1. But the examples are likely to work with future Reference Design and Petalinux
+releases as well. Most applications were manually compiled, although they can be directly
+integrated into the PetaLinux process. The gnu-aarch64-none-linux-gcc compiler (9.2-2019.12) was used
 to manually compile the applications. The operating system of the host computer
 was based on Ubuntu 18.04.
